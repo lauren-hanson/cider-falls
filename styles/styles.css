@@ -1,0 +1,57 @@
+body { 
+    font-family: 'BIZ UDPMincho', serif;
+    
+}
+
+main, .header, .park_areas_container, aside, .park_information {  
+    margin: 0; 
+    padding: 20px; 
+    border: 1px solid #000000; 
+
+}
+
+
+
+.header { 
+    background: goldenrod;
+    border: 1px solid #000000;  
+}
+
+.details { 
+    display: flex; 
+    justify-content: space-evenly; 
+    
+}
+
+.park_areas_container {
+    border: 1px solid #000000; 
+    flex-flow: row wrap; 
+    flex: 1; 
+ 
+}
+
+.park_container { 
+    border: 1px solid #000000; 
+    padding: 10px 20px; 
+    flex-basis: 24%; 
+    margin: 0 2rem; 
+    border: 1px solid darkolivegreen;
+}
+
+
+
+.guests_container { 
+    border: 1px solid #000000; 
+    flex-flow: column wrap;
+    padding: 10px 20px; 
+    align-items: center; 
+    justify-content: center; 
+   
+ 
+}
+
+.park_information { 
+    border: 1px solid #000000; 
+    background: #616161; 
+
+}
