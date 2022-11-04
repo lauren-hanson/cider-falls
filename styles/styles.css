@@ -1,57 +1,88 @@
-body { 
+body {
     font-family: 'BIZ UDPMincho', serif;
+    background-color: #F9E79F;
+
+}
+
+
+main,
+.header,
+.park_areas_container,
+aside,
+.park_information {
+    margin: 0;
+    padding: 20px;
+
+}
+
+
+.header_container {
+    display: flex;
+
+}
+
+
+.header {
+    background: darkolivegreen;
+    border-radius: 10px;
+    font-size: 50px; 
+    color: papayawhip; 
+
+}
+
+
+.service_list {
+    margin-left: 30px;
+    width: 50%; 
+    padding: 10px; 
     
 }
 
-main, .header, .park_areas_container, aside, .park_information {  
-    margin: 0; 
-    padding: 20px; 
-    border: 1px solid #000000; 
 
-}
-
-
-
-.header { 
-    background: goldenrod;
-    border: 1px solid #000000;  
+a {
+    color: darkolivegreen;
 }
 
 .details { 
     display: flex; 
-    justify-content: space-evenly; 
-    
+
+}
+
+.park_area { 
+    background-color: papayawhip;
+    border-radius: 10px; 
+    margin-top: 10px; 
+    padding: 20px; 
+    width: 75%; 
+
 }
 
 .park_areas_container {
-    border: 1px solid #000000; 
-    flex-flow: row wrap; 
-    flex: 1; 
- 
-}
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+    
 
-.park_container { 
-    border: 1px solid #000000; 
-    padding: 10px 20px; 
-    flex-basis: 24%; 
-    margin: 0 2rem; 
-    border: 1px solid darkolivegreen;
+
 }
 
 
 
-.guests_container { 
-    border: 1px solid #000000; 
+.guests_container {
     flex-flow: column wrap;
-    padding: 10px 20px; 
-    align-items: center; 
-    justify-content: center; 
-   
- 
+    padding: 10px 20px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+    text-align: center;
+    float: right; 
+    
+
+
 }
 
-.park_information { 
-    border: 1px solid #000000; 
-    background: #616161; 
+
+footer {
+    text-align: center;
 
 }

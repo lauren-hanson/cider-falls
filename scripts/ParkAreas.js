@@ -4,13 +4,13 @@ import { getGuests, getParkAreas, getServices, getServiceLog } from "./database.
 const areas = getParkAreas()
 
 // contains list of services  
-const services = getServices()
+//const services = getServices()
 
 // contains list of park guests 
 const parkGuests = getGuests()
 
 // contains an array where services are listed with area 
-const parkAreaServices = getServiceLog()
+//const parkAreaServices = getServiceLog()
 
 export const ParkAreas = () => {
 
@@ -19,9 +19,11 @@ export const ParkAreas = () => {
 
     // create a for loop to iterate through parkAreas to get name 
     for (const area of areas) {
-        html += `<h2 id="area--${area.id}">${area.name}</h2>`
+        html += `<h2 id="area--${area.id}">${area.name}</h2>
+        <img>${area.src}</img>`
 
-        // create a for loop to iterate through serviceLog
+/*
+        // create a for loop to iterate through serviceLog which will add the services to each area of the park
         for (const areaServices of parkAreaServices) {
 
             // create a nested array to iterate through services array
@@ -37,12 +39,13 @@ export const ParkAreas = () => {
             }
 
         }
+     */   
+
     }
 
     // return html string 
     return html
 }
-
 
 
 // import ParkAreas() in main.js
