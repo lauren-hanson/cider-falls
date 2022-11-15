@@ -1,57 +1,106 @@
-body { 
+body {
     font-family: 'BIZ UDPMincho', serif;
+    background-image: url("https://img.freepik.com/premium-photo/foggy-dark-forest-fog-smog-wild-forest-nature-forest-landscape-dark-forest-night-view_129911-261.jpg"); 
+    background-size: 100%;
+    background-repeat: repeat-y;
+    color: #0e1918; 
+
+}
+
+main,
+.header,
+.park_areas_container,
+aside,
+.service_list {
+    padding: 10px; 
+    margin: 20px; 
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+}
+
+.header {
+    font-size: 75px; 
+    margin: 50px 30px 30px 30px;
+    text-align: center; 
+  
+   
+}
+
+
+.service_list {
+    margin-left: 30px;
+    padding: 10px; 
     
 }
 
-main, .header, .park_areas_container, aside, .park_information {  
-    margin: 0; 
-    padding: 20px; 
-    border: 1px solid #000000; 
 
-}
-
-
-
-.header { 
-    background: goldenrod;
-    border: 1px solid #000000;  
-}
 
 .details { 
     display: flex; 
-    justify-content: space-evenly; 
-    
+
+}
+
+.park_area {
+
+    padding: 20px; 
+    width: 75%; 
+    border: 1px solid #1c292a; 
+    color: #0e1918;
+    background-color: #667678; 
+    opacity: 90%; 
+
 }
 
 .park_areas_container {
-    border: 1px solid #000000; 
+    display: flex; 
     flex-flow: row wrap; 
-    flex: 1; 
- 
-}
-
-.park_container { 
-    border: 1px solid #000000; 
-    padding: 10px 20px; 
-    flex-basis: 24%; 
-    margin: 0 2rem; 
-    border: 1px solid darkolivegreen;
-}
-
-
-
-.guests_container { 
-    border: 1px solid #000000; 
-    flex-flow: column wrap;
-    padding: 10px 20px; 
+    justify-content: space-around; 
     align-items: center; 
-    justify-content: center; 
-   
- 
+    align-content: center; 
+    
 }
 
-.park_information { 
-    border: 1px solid #000000; 
-    background: #616161; 
+
+
+.area_image_container { 
+    display: flex; 
+    flex-flow: column wrap; 
+    align-items: center; 
+    align-content: center; 
+
+}
+
+img { 
+    width: 300px;
+    height: 200px;  
+    
+}
+
+
+
+.guests_container {
+    flex-flow: column wrap;
+    padding: 10px 20px;
+    align-items: center;
+    justify-content: center;
+    align-content: center; 
+    margin-top: 25px;
+    text-align: center;
+    border: 1px solid #1c292a; 
+    color: #0e1918;
+    background-color: #667678; 
+    opacity: 90%; 
+    width: 10%; 
+
+}
+
+
+footer {
+    text-align: center;
 
 }
