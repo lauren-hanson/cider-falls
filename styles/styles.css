@@ -1,69 +1,84 @@
 body {
     font-family: 'BIZ UDPMincho', serif;
-    background-color: #F9E79F;
+    background-image: url("https://img.freepik.com/premium-photo/foggy-dark-forest-fog-smog-wild-forest-nature-forest-landscape-dark-forest-night-view_129911-261.jpg"); 
+    background-size: 100%;
+    background-repeat: repeat-y;
+    color: #0e1918; 
 
 }
-
 
 main,
 .header,
 .park_areas_container,
 aside,
-.park_information {
-    margin: 0;
-    padding: 20px;
+.service_list {
+    padding: 10px; 
+    margin: 20px; 
 
 }
 
-
-.header_container {
+.container {
     display: flex;
-
+    flex-direction: column; 
+    justify-content: center; 
 }
-
 
 .header {
-    background: darkolivegreen;
-    border-radius: 10px;
-    font-size: 50px; 
-    color: papayawhip; 
-
+    font-size: 75px; 
+    margin: 50px 30px 30px 30px;
+    text-align: center; 
+  
+   
 }
 
 
 .service_list {
     margin-left: 30px;
-    width: 50%; 
     padding: 10px; 
     
 }
 
 
-a {
-    color: darkolivegreen;
-}
 
 .details { 
     display: flex; 
 
 }
 
-.park_area { 
-    background-color: papayawhip;
-    border-radius: 10px; 
-    margin-top: 10px; 
+.park_area {
+
     padding: 20px; 
     width: 75%; 
+    border: 1px solid #1c292a; 
+    color: #0e1918;
+    background-color: #667678; 
+    opacity: 90%; 
 
 }
 
 .park_areas_container {
     display: flex; 
-    flex-wrap: wrap; 
+    flex-flow: row wrap; 
     justify-content: space-around; 
+    align-items: center; 
+    align-content: center; 
     
+}
 
 
+
+.area_image_container { 
+    display: flex; 
+    flex-flow: column wrap; 
+    align-items: center; 
+    align-content: center; 
+
+}
+
+img { 
+    width: 300px;
+    height: 200px;  
+    
 }
 
 
@@ -73,11 +88,14 @@ a {
     padding: 10px 20px;
     align-items: center;
     justify-content: center;
+    align-content: center; 
     margin-top: 25px;
     text-align: center;
-    float: right; 
-    
-
+    border: 1px solid #1c292a; 
+    color: #0e1918;
+    background-color: #667678; 
+    opacity: 90%; 
+    width: 10%; 
 
 }
 

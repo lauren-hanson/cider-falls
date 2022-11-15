@@ -19,8 +19,11 @@ export const ParkAreas = () => {
 
     // create a for loop to iterate through parkAreas to get name 
     for (const area of areas) {
-        html += `<h2 id="area--${area.id}">${area.name}</h2>
-        <img>${area.src}</img>`
+        html += `
+        <div class="area_image_container">
+        <h2 class="area_image" id="area--${area.id}">${area.name}</h2>
+        <img src="${area.img}"></img>
+        </div>`
 
 /*
         // create a for loop to iterate through serviceLog which will add the services to each area of the park
